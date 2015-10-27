@@ -1,4 +1,4 @@
-require 'lib/racional'
+require './racional'
 require 'test/unit'
 
 class TestFraccion < Test::Unit::TestCase
@@ -21,5 +21,8 @@ class TestFraccion < Test::Unit::TestCase
        assert_not_equal("50/10", @rac2.to_s)
     end
   
+    def test_simple1
+        assert_equal("91/60", (@rac1 + @rac2).to_s)
+    end
   
 end
