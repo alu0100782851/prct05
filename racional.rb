@@ -19,3 +19,15 @@ class Fraccion
 	def to_s		
 		"#{num} / #{denom}"
 	end
+
+	
+	
+	#Método que simplifica un racional
+	def simplificar(dato) 	
+		
+		aux = gcd(dato.num, dato.denom)		 			
+		Fraccion.new(dato.num/aux, dato.denom/aux)
+		
+	end
+	
+end
