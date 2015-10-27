@@ -20,6 +20,11 @@ class Fraccion
 	end 
 
 
+	def -@
+		-@denom
+	end
+
+
 	#Método para convertir los objetos a cadena
 	def to_s		
 		"#{num} / #{denom}"
