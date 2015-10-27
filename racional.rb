@@ -30,6 +30,15 @@ class Fraccion
 	end
 	
 	
+	#Método que calcula la DIVISION
+	def /(dato)
+
+		resultado = Fraccion.new(@num*dato.denom,@denom*dato.num)
+        simplificar(resultado)
+        
+	end
+	
+	
 	#Método que simplifica un racional
 	def simplificar(dato) 	
 		
