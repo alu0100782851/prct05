@@ -1,6 +1,6 @@
 # Practica 5 LPP
 require "./gcd.rb"
-
+require "./mcm.rb"
 
 class Fraccion
 
@@ -20,13 +20,21 @@ class Fraccion
 		"#{num} / #{denom}"
 	end
 
+
+	#Método que calcula la MULTIPLICACION
+	def *(dato)
+		
+		resultado = Fraccion.new(@num*dato.num,@denom*dato.denom)		 
+        simplificar(resultado)
+        
+	end
 	
 	
 	#Método que simplifica un racional
 	def simplificar(dato) 	
 		
-		aux = gcd(dato.num, dato.denom)		 			
-		Fraccion.new(dato.num/aux, dato.denom/aux)
+		aux = gcd(dato.num, dato.denom)					#Obtiene el mcd entre el numerador y denominador indicados a traves del objeto dato 			
+		Fraccion.new(dato.num/aux, dato.denom/aux)		#Crea un nuevo objeto del tipo fraccion que contiene la fraccion simplificada
 		
 	end
 	
