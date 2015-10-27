@@ -20,3 +20,10 @@ task :resta do
   sh "ruby -I. test/tc_racional.rb -n /simple2/"
 end
 
+desc "Prueba unitaria simple para la funcion multiplicacion"
+task :mult do
+  sh "ruby -I. test/tc_racional.rb -n /simple3/"
+end
+
+
+
