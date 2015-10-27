@@ -20,6 +20,7 @@ class Fraccion
 	end 
 
 
+	#Convertir la variable de instancia denom en negativa, si la fraccion debe ser negativa
 	def -@
 		-@denom
 	end
@@ -27,7 +28,7 @@ class Fraccion
 
 	#Método para convertir los objetos a cadena
 	def to_s		
-		"#{num} / #{denom}"
+		"#{num}/#{denom}"
 	end
 
 
