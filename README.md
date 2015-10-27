@@ -17,20 +17,22 @@ Documentación
 
 Los ficheros de la practica están estructurados de la siguiente forma:
 
-<i class='icon-folder'></i> practica05
-|. . . <i class='icon-folder'></i> test
-|. .  . | . .  <i class='icon-file'></i> tc_racional.rb
-|. . .   <i class='icon-file'></i> racional.rb
-|. . . <i class='icon-file'></i> mcm.rb
-|. . . <i class='icon-file'></i> gcd.rb
-|. . . <i class='icon-file'></i> Rakefile
-|. . . <i class='icon-file'></i> .gitignore
-|. . . <i class='icon-file'></i> README.md
+- practica05
+	- racional.rb
+	- mcm.rb
+	- gcd.rb
+	- Rakefile
+	- .gitignore
+	- README.md
+	- test
+		- tc_racional.rb
 
 
+A continuación se especifican las carpetas creadas y su descripción:
 >**Carpetas**
 
 > - test: Contiene el fichero con las Test Unit
+
 
 Los ficheros empleados en la realización de la practica y la finalidad de los mismos se especifican a continuación:
 
@@ -63,9 +65,9 @@ Después de esto, se ha procedido con la elaboración del fichero README.md y el
 Por otro lado, cada cambio realizado en los ficheros ha sido replicado en el repositorio git.
 
 Para realizar esto se ha hecho uso de los siguientes comandos:
->Añadir un fichero:  ***git add nombrefichero***
->Realizar confirmaciones: ***git commit -m "Mensaje de confirmación"***
->Empujar cambios al repositorio git:  ***git push ghp04 master***
+> - Añadir un fichero:  ***git add nombrefichero***
+> - Realizar confirmaciones: ***git commit -m "Mensaje de confirmación"***
+> - Empujar cambios al repositorio git:  ***git push ghp04 master***
 
 
 Guion
