@@ -11,7 +11,12 @@ class Fraccion
     #Método para inicializar los atributos(constructor)
     #Declaracion de variables de instancia para trabajar con ellas en una funcion sin modificar su valor en las restantes
 	def initialize(n, d)
-		@num, @denom = n, d		
+		if d != 0
+			@denom=d
+	   	else
+			puts "No es posible dividir por 0"
+	   	end
+		@num = n 	
 	end 
 
 
@@ -48,8 +53,8 @@ class Fraccion
 	#Metodo que calcula la RESTA	
 	def -(dato)  
 		
-		aux = mcm(@denom, dato.denom)			  													#mcm de los denominadores
-		resultado = Fraccion.new(((aux/@denom)*@num)-((aux/dato.denom)*dato.num),aux) 			#resta de los objetos
+		aux = mcm(@denom, dato.denom)			  											#mcm de los denominadores
+		resultado = Fraccion.new(((aux/@denom)*@num)-((aux/dato.denom)*dato.num),aux) 		#resta de los objetos
 		simplificar(resultado)
 			
 	end
