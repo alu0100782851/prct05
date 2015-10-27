@@ -25,5 +25,8 @@ task :mult do
   sh "ruby -I. test/tc_racional.rb -n /simple3/"
 end
 
-
+desc "Prueba unitaria simple para la funcion division"
+task :div do
+  sh "ruby -I. test/tc_racional.rb -n /simple4/"
+end
 
