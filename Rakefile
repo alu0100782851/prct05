@@ -6,12 +6,17 @@ task :tu do
 end
 
 desc "Prueba unitaria simple para funcion to_s"
-task :simple do
+task :to_S do
   sh "ruby -I. test/tc_racional.rb -n /simple/"
 end
 
 desc "Prueba unitaria simple para la funcion suma"
-task :simple1 do
+task :suma do
   sh "ruby -I. test/tc_racional.rb -n /simple1/"
+end
+
+desc "Prueba unitaria simple para la funcion resta"
+task :resta do
+  sh "ruby -I. test/tc_racional.rb -n /simple2/"
 end
 

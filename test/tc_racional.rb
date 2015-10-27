@@ -24,5 +24,9 @@ class TestFraccion < Test::Unit::TestCase
     def test_simple1
         assert_equal("91/60", (@rac1 + @rac2).to_s)
     end
+    
+    def test_simple2
+        assert_equal("-59/60", (@rac1 - @rac2).to_s)
+    end
   
 end
