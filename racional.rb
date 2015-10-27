@@ -25,7 +25,7 @@ class Fraccion
 	def *(dato)
 		
 		resultado = Fraccion.new(@num*dato.num,@denom*dato.denom)		 
-        simplificar(resultado)
+		simplificar(resultado)
         
 	end
 	
@@ -34,9 +34,17 @@ class Fraccion
 	def /(dato)
 
 		resultado = Fraccion.new(@num*dato.denom,@denom*dato.num)
-        simplificar(resultado)
+		simplificar(resultado)
         
 	end
+	
+	
+	#Metodo que calcula la SUMA
+	def +(dato)  
+		aux = mcm(@denom, dato.denom)			  											#mcm de los denominadores
+		resultado = Fraccion.new(((aux/@denom)*@num)+((aux/dato.denom)*dato.num),aux) 	#suma de los objetos
+		simplificar(resultado)				  											#simplificación del resultado
+	end	
 	
 	
 	#Método que simplifica un racional
