@@ -37,4 +37,8 @@ class TestFraccion < Test::Unit::TestCase
         assert_equal("16/75", (@rac1 / @rac2).to_s)
     end
     
+    def test_failure
+        assert_not_equal("4,3", Fraccion.new(4,3).to_s)
+    end
+    
 end
